@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor Eterno</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #333; overflow-x: hidden; }
+        .container { max-width: 800px; width: 90%; text-align: center; padding: 20px; }
+        h1 { font-size: 2.5em; color: #d63384; margin-bottom: 20px; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        .hearts { font-size: 4em; color: #ff69b4; margin: 20px 0; animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        p { font-size: 1.2em; line-height: 1.6; margin: 15px 0; }
+        .btn { display: inline-block; background: #ff69b4; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; margin: 20px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(255,105,180,0.4); }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(255,105,180,0.6); }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 30px 0; }
+        .gallery img { width: 150px; height: 150px; object-fit: cover; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.1); }
+        footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+        @media (max-width: 768px) { h1 { font-size: 2em; } .hearts { font-size: 3em; } p { font-size: 1em; } .gallery img { width: 120px; height: 120px; } }
+        @media (max-width: 480px) { h1 { font-size: 1.5em; } .hearts { font-size: 2.5em; } .btn { padding: 12px 24px; font-size: 1em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para Ti, Meu Amor</h1>
+        <div class="hearts">💕 💖 💕</div>
+        <p>Desde o dia em que te conheci, o meu coração encontrou o seu lar. Juntos, criamos memórias que durarão para sempre.</p>
+        <p>Quero envelhecer ao teu lado, rindo das pequenas coisas e sonhando grande.</p>
+        <div class="gallery">
+            <!-- Use a imagem anexada aqui: baixe image.jpg e hospede online, ou substitua por URL -->
+            <img src="img/1.png" alt="Nossa Foto Especial" onerror="this.src='https://via.placeholder.com/150?text=Foto+1'">
+            <img src="img/1.png" alt="Nossa Foto Especial" onerror="this.src='https://via.placeholder.com/150?text=Foto+1'">
+            <img src="img/1.png" alt="Nossa Foto Especial" onerror="this.src='https://via.placeholder.com/150?text=Foto+1'">
+        </div>
+        <footer>Feito com todo o amor do mundo 💝</footer>
+    </div>
+</body>
+</html>
